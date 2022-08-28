@@ -1,6 +1,5 @@
 import "./App.css";
-import WeatherSearch from "./WeatherSearch";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Search from "./Search";
 
 function App() {
 	return (
@@ -8,7 +7,7 @@ function App() {
 			<div className="weather-container">
 				<header className="App-header">
 					<h1> My Weather App - React</h1>
-					<WeatherSearch />
+					<Search />
 				</header>
 			</div>
 			<footer>
