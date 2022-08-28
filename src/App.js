@@ -1,24 +1,15 @@
-import "./App.css";
-import Search from "./Search";
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import Navigation from "./Navigation";
+import Main from "./Main";
 
-function App() {
-	return (
-		<div className="App">
-			<div className="weather-container">
-				<header className="App-header">
-					<h1> My Weather App - React</h1>
-					<Search />
-				</header>
+export default class App extends Component {
+	render() {
+		return (
+			<div>
+				<Navigation />
+				<Main />
 			</div>
-			<footer>
-				{" "}
-				<a href="https://github.com/gosiast/react-weather-app">
-					Open source
-				</a>{" "}
-				by <a href="https://github.com/gosiast">Malgorzata Stano</a>
-			</footer>
-		</div>
-	);
+		);
+	}
 }
-
-export default App;
