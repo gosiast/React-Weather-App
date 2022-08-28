@@ -1,13 +1,22 @@
 import "./App.css";
-import Weather from "./Weather";
+import WeatherSearch from "./WeatherSearch";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<h1> My Weather App - React</h1>
-				<Weather />
+			<div className= "weather-container">
+				<header className="App-header">
+					<h1> My Weather App - React</h1>
+				<WeatherSearch />
 			</header>
+			<footer>
+				{" "}
+				<a href="https://github.com/gosiast/react-weather-app">
+					Open source
+				</a>{" "}
+				by <a href="https://github.com/gosiast">Malgorzata Stano</a>
+			</footer>
+			</div>
 		</div>
 	);
 }
